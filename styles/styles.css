@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap');
+
+/*////////////////////////////////////////////////////////////////////////
+Table of Contents:
+    1. Global Styles
+    2. Typografie
+    3. Areas
+        3.1 Header
+        3.2 Testimonial
+        3.3 Support
+        3.4 Faq
+        3.5 Footer
+////////////////////////////////////////////////////////////////////////*/
+
+
+
+/*////////////////////////
+    1. Global Styles
+////////////////////////*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --grey: #899CA0;
+    --dark-green: #1C2B32;
+}
+
+/*////////////////////////
+    2. Typography
+////////////////////////*/
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+a, input {
+    font-family: inherit;
+}
+
+
+
+/*////////////////////////
+    3. Areas
+////////////////////////*/
+
+
+
+/*///////////// 3.1 Header /////////////*/
+header {
+    width: 100%;
+    background-image: url("../assets/images/mountains.jpg");
+    background-position: center;
+}
+
+.header-section {
+    padding: 100px 0 370px 0;
+    text-align: center;
+    color: var(--dark-green);
+}
+
+.header-section h1 {
+    font-size: 120px;
+}
+
+.header-section form {
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 40px;
+    padding: 25px 0 25px 25px;
+    margin: 30px;
+    overflow: hidden;
+    font-size: 17px;
+}
+
+.header-section input {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    color: var(--dark-green);
+    font-size: 17px;
+}
+
+.header-section input:focus {
+    outline: none;
+}
+
+.header-section input::placeholder {
+    color: var(--dark-green)
+}
+
+.header-section input + label {
+    margin-left: 100px;
+    color: white;
+    background-color: var(--dark-green);
+    padding: 30px 40px 30px 30px;
+}
+
+/*///////////// 3.2 Testimonial /////////////*/
+
+
+
+/*///////////// 3.3 Support /////////////*/
+
+
+
+/*///////////// 3.4 Faq /////////////*/
+
+
+
+/*///////////// 3.5 Footer /////////////*/
