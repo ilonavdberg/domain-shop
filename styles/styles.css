@@ -3,7 +3,7 @@
 /*////////////////////////////////////////////////////////////////////////
 Table of Contents:
     1. Global Styles
-    2. Typografie
+    2. Typography
     3. Areas
         3.1 Header
         3.2 Testimonial
@@ -24,9 +24,36 @@ Table of Contents:
     box-sizing: border-box;
 }
 
+main {
+    max-width: 1000px;
+    margin: auto;
+}
+
 :root {
     --grey: #899CA0;
     --dark-green: #1C2B32;
+    --shadow-color: rgba(0, 0, 0, 0.3);
+}
+
+a {
+    color: var(--grey)
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+button {
+    color: white;
+    background-color: var(--dark-green);
+    border: none;
+}
+
+button:hover,
+button:focus,
+summary:hover,
+summary:focus {
+    cursor: pointer;
 }
 
 /*////////////////////////
@@ -37,10 +64,19 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
-a, input {
+a, input, button {
     font-family: inherit;
 }
 
+header h1 {
+    font-size: 120px;
+}
+
+h2 {
+    font-size: 36px;
+    text-align: center;
+    margin: 50px 0;
+}
 
 
 /*////////////////////////
@@ -56,58 +92,116 @@ header {
     background-position: center;
 }
 
-.header-section {
+.header-homepage {
     padding: 100px 0 370px 0;
     text-align: center;
     color: var(--dark-green);
 }
 
-.header-section h1 {
-    font-size: 120px;
-}
-
-.header-section form {
+.header-homepage form {
     display: inline-block;
     border: 2px solid black;
-    border-radius: 40px;
-    padding: 25px 0 25px 25px;
+    border-radius: 50px;
+    padding: 0 0 0 25px;
     margin: 30px;
     overflow: hidden;
-    font-size: 17px;
 }
 
-.header-section input {
+.header-homepage input {
     background-color: rgba(0, 0, 0, 0);
     border: none;
     color: var(--dark-green);
-    font-size: 17px;
+    font-size: 18px;
 }
 
-.header-section input:focus {
+.header-homepage input:focus {
     outline: none;
 }
 
-.header-section input::placeholder {
+.header-homepage input::placeholder {
     color: var(--dark-green)
 }
 
-.header-section input + label {
+.header-homepage button {
     margin-left: 100px;
-    color: white;
-    background-color: var(--dark-green);
     padding: 30px 40px 30px 30px;
+    font-size: 18px;
 }
 
 /*///////////// 3.2 Testimonial /////////////*/
 
+.testimonials article {
+    margin: 50px 0;
+    padding: 40px 20px 60px 100px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px var(--shadow-color);
+    position: relative;
+}
 
+.quote-icon {
+    position: absolute;
+    top: 65px;
+    left: 50px;
+}
+
+.avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 100%;
+}
+
+.testimonials blockquote {
+    margin: 30px 0;
+}
+
+.testimonials article figcaption {
+    display: inline-block;
+    vertical-align: 60%;
+    padding-left: 25px;
+    font-style: italic;
+}
 
 /*///////////// 3.3 Support /////////////*/
 
+.support img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.support figcaption {
+    margin: 30px 0;
+}
+
+.support button {
+    font-size: 17px;
+    padding: 30px 60px;
+    border-radius: 50px;
+}
 
 
 /*///////////// 3.4 Faq /////////////*/
 
+details {
+    margin: 40px 0;
+}
 
+.faq-answer {
+    color: white;
+    background-color: var(--grey);
+    border-radius: 20px;
+    padding: 30px 40px;
+    margin: 10px 0;
+}
+
+details:last-of-type {
+    margin-bottom: 90px;
+}
 
 /*///////////// 3.5 Footer /////////////*/
+
+footer {
+    text-align: center;
+    color: white;
+    background-color: var(--dark-green);
+    padding: 50px 0;
+}
